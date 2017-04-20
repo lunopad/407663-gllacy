@@ -84,35 +84,25 @@
     </header>
     <main class="container">
       <section class="slider">
+        <ul class="slider-dots">
+          <li class="active">1</li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
         <div class="slider-item">
           <img src="http://placehold.it/650x590" width="650" height="590" alt="Крем-брюле и пломбир с малиновым джемом">
           <h2 class="slider-header">Крем-брюле и пломбир с малиновым джемом</h2>
           <a class="main-btn" href="#">Давайте оба!</a>
-          <ul class="slider-dots">
-            <li class="active">1</li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul>
         </div>
         <div class="slider-item">
           <img src="http://placehold.it/650x590" width="650" height="590" alt="Шоколадный пломбир и лимонный сорбет">
           <h2 class="slider-header">Шоколадный пломбир и лимонный сорбет </h2>
           <a class="main-btn" href="#">Давайте оба!</a>
-          <ul class="slider-dots">
-            <li><a href="#">1</a></li>
-            <li class="active">2</li>
-            <li><a href="#">3</a></li>
-          </ul>
         </div>
         <div class="slider-item">
           <img src="http://placehold.it/650x590" width="650" height="590" alt="Пломбир с помадкой и клубничный щербет">
           <h2 class="slider-header">Пломбир с помадкой и клубничный щербет</h2>
           <a class="main-btn" href="#">Давайте оба!</a>
-          <ul class="slider-dots">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li class="active">3</li>
-          </ul>
         </div>
       </section>
       <section class="banners">
@@ -129,43 +119,51 @@
       </section>
       <section class="hits">
         <div class="hit-1">
-          <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div class="hits-price">
-            310&#8381;<span class="hits-kg">/кг</span>
-          </div>
-          <div class="hits-description">
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </div>
+          <a href="#">
+            <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <div class="hits-price">
+              310&#8381;<span class="hits-kg">/кг</span>
+            </div>
+            <div class="hits-description">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </div>
+          </a>
           <a class="main-btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-2">
-          <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <div class="hits-price">
-            380&#8381;<span class="hits-kg">/кг</span>
-          </div>
-          <div class="hits-description">
-            Сливочно-кофейное с кусочками шоколада
-          </div>
+          <a href="#">
+            <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <div class="hits-price">
+              380&#8381;<span class="hits-kg">/кг</span>
+            </div>
+            <div class="hits-description">
+              Сливочно-кофейное с кусочками шоколада
+            </div>
+          </a>
           <a class="main-btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-3">
-          <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <div class="hits-price">
-            355&#8381;<span class="hits-kg">/кг</span>
-          </div>
-          <div class="hits-description">
-            Сливочно-клубничное с присыпкой из белого шоколада
-          </div>
+          <a href="#">
+            <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <div class="hits-price">
+              355&#8381;<span class="hits-kg">/кг</span>
+            </div>
+            <div class="hits-description">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </div>
+          </a>
           <a class="main-btn" href="#">Быстрый просмотр</a>
         </div>
         <div class="hit-4">
-          <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <div class="hits-price">
-            415&#8381;<span class="hits-kg">/кг</span>
-          </div>
-          <div class="hits-description">
-            Сливочное крем-брюле с карамельной подливкой
-          </div>
+          <a href="#">
+            <img src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <div class="hits-price">
+              415&#8381;<span class="hits-kg">/кг</span>
+            </div>
+            <div class="hits-description">
+              Сливочное крем-брюле с карамельной подливкой
+            </div>
+          </a>
           <a class="main-btn" href="#">Быстрый просмотр</a>
         </div>
       </section>
@@ -215,7 +213,7 @@
           <a class="main-btn" href="#">Форма обратной связи</a>
           <div class="modal">
             <h2>Мы обязательно вам ответим!</h2>
-            <a class="remove" href="#">Закрыть</a>
+            <button class="remove">Закрыть</button>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="name" value="" placeholder="Как вас зовут?">
               <input type="text" name="email" value="" placeholder="Ваша почта для ответа?">

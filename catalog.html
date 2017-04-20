@@ -13,13 +13,13 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Каталог</a>
-              <ul>
+              <a class="main-navigation-active" href="#">Каталог</a>
+              <ul class="main-navigation-submenu">
                 <li>
                   <a href="#">Новинки</a>
                 </li>
                 <li>
-                  <a href="#">Сливочное</a>
+                  <a class="main-navigation-submenu-active">Сливочное</a>
                 </li>
                 <li>
                   <a href="#">Щербеты</a>
@@ -62,16 +62,26 @@
         <div class="cart-block">
           <a class="cart" href="#">Пусто</a>
           <div class="cart-window">
-            <ul class="cart-list">
-              <li>
-                <a class="remove" href="#">Убрать</a>
-                <img src="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                <span class="cart-description">Пломбир с апельсиновым джемом</span>
-                <span class="cart-amount">1,5 кг x</span> 
-                <span class="cart-price">200 руб.</span>
-                <span class="cart-cost">300 руб.</span>
-              </li>
-            </ul>
+            <table class="cart-list">
+              <tr>
+                <td>
+                  <a class="remove" href="#">Убрать</a>
+                </td>
+                <td>
+                  <img src="http://placehold.it/33x33" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </td>
+                <td>
+                  <span class="cart-description">Пломбир с апельсиновым джемом</span>
+                </td>
+                <td>
+                  <span class="cart-amount">1,5 кг x</span>
+                  <span class="cart-price">200 руб.</span>
+                </td>
+                <td>
+                  <span class="cart-cost">300 руб.</span>
+                </td>
+              </tr>
+            </table>
             <p>Итого: 750 руб.</p>
             <a class="main-btn" href="#">Оформить заказ</a>
           </div>
@@ -97,7 +107,7 @@
       <h1>Сливочное мороженое</h1>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <label>
-          Сортировка:
+          Сортировка:<br>
           <select name="sorting">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
@@ -108,30 +118,30 @@
         
         <label>
           Цена: <span id="price-start">100 руб.</span> - <span id="price-end">500 руб.</span>
+          <div class="price-slider">
+            <div class="price-low">
+            </div>
+            <div class="price-high">
+            </div>
+          </div>
         </label>
-        <div class="price-slider">
-          <div class="price-low">
-          </div>
-          <div class="price-high">
-          </div>
-        </div>
         
-        <label>
-          Жирность:
-        </label><br>
-        <input type="radio" name="fat" value="0"> 0%
-        <input type="radio" name="fat" value="less10"> до 10%
-        <input type="radio" name="fat" value="less30"> до 30%
-        <input type="radio" name="fat" value="more30"> выше 30%
+        <fieldset>
+          <legend>Жирность:</legend>
+          <input id="fat0" type="radio" name="fat" value="0"> <label for="fat0">0%</label>
+          <input id="fat-less10" type="radio" name="fat" value="less10"> <label for="fat10">до 10%</label>
+          <input id="fat-less30" type="radio" name="fat" value="less30"> <label>до 30%</label>
+          <input id="fat-more30" type="radio" name="fat" value="more30"> <label>выше 30%</label>
+        </fieldset>
         
-        <label>
-          Наполнители:
-        </label><br>
-        <input type="checkbox" name="filing" value="choko"> шоколадные
-        <input type="checkbox" name="filing" value="sugar"> сахарные присыпки
-        <input type="checkbox" name="filing" value="fruit"> фрукты
-        <input type="checkbox" name="filing" value="syrops"> сиропы
-        <input type="checkbox" name="filing" value="jams"> джемы
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <input id="choko" type="checkbox" name="filing" value="choko"> <label for="choko">шоколадные</label>
+          <input id="sugar" type="checkbox" name="filing" value="sugar"> <label for="choko">сахарные присыпки</label>
+          <input id="fruit" type="checkbox" name="filing" value="fruit"> <label for="choko">фрукты</label>
+          <input id="syrops" type="checkbox" name="filing" value="syrops"> <label for="choko">сиропы</label>
+          <input id="jams" type="checkbox" name="filing" value="jams"> <label for="choko">джемы</label>
+        </fieldset>
         
         <button class="filter-btn" type="submit">Применить</button>
       </form>
@@ -149,8 +159,19 @@
           </div>
         </section>
         <nav class="catalog-navigation">
-          <a class="active" href="#">1</a>
-          <a href="#">2</a>
+          <ul>
+            <li>
+              <a href="#">предыдущая</a>
+            </li>
+            <li>
+              <a class="active">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">следующая</a>
+            </li>
         </nav>
       </article>
     </main>
