@@ -41,19 +41,25 @@
             </li>
           </ul>
         </nav>
-        <a class="search" href="#">Поиск</a>
-        <div class="search-window">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="search" value="" placeholder="Что ищем?">
-            <button class="search-btn" type="submit">Отправить</button>
-          </form>
+        <div class="search-block">
+          <a class="search" href="#">Поиск</a>
+          <div class="search-window">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input type="text" name="search" value="" placeholder="Что ищем?">
+              <button class="search-btn" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
         <div class="login-block">
           <a class="login" href="#">Вход</a>
           <div class="login-window">
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="email" value="" placeholder="Электронная почта">
-              <input type="text" name="password" value="" placeholder="Пароль">
+              <p>
+                <input type="text" name="email" value="" placeholder="Электронная почта">
+              </p>
+              <p>
+                <input type="text" name="password" value="" placeholder="Пароль">
+              </p>
               <button class="main-btn" type="submit">Войти</button>
             </form>
             <a href="#">Забыли пароль?</a><br>
@@ -93,8 +99,8 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <nav class="breadcrumbs">
+    <main class="container clearfix">
+      <nav class="breadcrumbs clearfix">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -106,8 +112,8 @@
         </ul>
       </nav>
       <h1>Сливочное мороженое</h1>
-      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
+      <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
+        <label class="filter-form-item">
           Сортировка:<br>
           <select name="sorting">
             <option value="popular">по популярности</option>
@@ -117,8 +123,9 @@
           </select>
         </label>
         
-        <label>
-          Цена: <span id="price-start">100 руб.</span> - <span id="price-end">500 руб.</span>
+        <label class="filter-form-item">
+          Цена:<br>
+          <input type="text" name="price-start" value="100 руб."> - <input type="text" name="price-end" value="500 руб.">
         </label>
         <div class="price-slider">
           <div class="price-low">
@@ -128,7 +135,7 @@
         </div>
         
         
-        <fieldset>
+        <fieldset class="filter-form-item">
           <legend>Жирность:</legend>
           <input id="fat0" type="radio" name="fat" value="0"> <label for="fat0">0%</label>
           <input id="fat-less10" type="radio" name="fat" value="less10"> <label for="fat-less10">до 10%</label>
@@ -136,7 +143,7 @@
           <input id="fat-more30" type="radio" name="fat" value="more30"> <label>выше 30%</label>
         </fieldset>
         
-        <fieldset>
+        <fieldset class="filter-form-item">
           <legend>Наполнители:</legend>
           <input id="choko" type="checkbox" name="filing" value="choko"> <label for="choko">шоколадные</label>
           <input id="sugar" type="checkbox" name="filing" value="sugar"> <label for="choko">сахарные присыпки</label>
@@ -148,7 +155,7 @@
         <button class="filter-btn" type="submit">Применить</button>
       </form>
       <article class="catalog-index">
-        <section class="catalog-list">
+        <section class="catalog-list clearfix">
           <div class="catalog-item">
             <img src="img/hit1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <div class="catalog-price">
@@ -156,6 +163,118 @@
             </div>
             <div class="catalog-description">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/hit2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <div class="catalog-price">
+              380&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочно-кофейное с кусочками шоколада
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/hit3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <div class="catalog-price">
+              355&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/hit4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <div class="catalog-price">
+              415&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное крем-брюле с карамельной подливкой
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          
+          <div class="catalog-item">
+            <img src="img/catalog5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+            <div class="catalog-price">
+              325&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное с брусничным джемом
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <div class="catalog-price">
+              410&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочно-черничное с цельными ягодами черники
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <div class="catalog-price">
+              375&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочно-лимонное с карамельной присыпкой
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <div class="catalog-price">
+              320&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное с шоколадной стружкой
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          
+          <div class="catalog-item">
+            <img src="img/catalog9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <div class="catalog-price">
+              440&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочно-ванильное с кусочками шоколада
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+            <div class="catalog-price">
+              435&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное с ментоловым сиропом
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <div class="catalog-price">
+              355&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное с кусочками черного шоколада
+            </div>
+            <a class="main-btn" href="#">Быстрый просмотр</a>
+          </div>
+          <div class="catalog-item">
+            <img src="img/catalog12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+            <div class="catalog-price">
+              420&#8381;<span class="catalog-kg">/кг</span>
+            </div>
+            <div class="catalog-description">
+              Сливочное с мятным сиропом
             </div>
             <a class="main-btn" href="#">Быстрый просмотр</a>
           </div>
@@ -178,35 +297,33 @@
         </nav>
       </article>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        </section>
-        <nav class="footer-navigation">
-          <ul>
-            <li class="heart">
-              <a href="#">Для поставщиков</a>
-            </li>
-            <li>
-              <a href="#">О производстве</a>
-            </li>
-            <li>
-              <a href="#">Наши документы</a>
-            </li>
-            <li>
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
-        </section>
-      </div>
+    <footer class="footer container clearfix">
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      </section>
+      <nav class="footer-navigation">
+        <ul>
+          <li class="heart">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
+      </section>
     </footer>
   </body>
 </html>
