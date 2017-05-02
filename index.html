@@ -6,8 +6,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>    
-    <header class="main-header">
-      <div class="container clearfix">
+    <header class="main-header container clearfix">
         <div class="logo">
           <img src="img/logo-gllacy.png" width="154" height="64" alt="GllacyShop">
         </div>
@@ -87,7 +86,6 @@
           с 10 до 20, ежедневно<br>
           <span class="phone">8 812 450-25-25</span>
         </div>
-      </div>
     </header>
     
     
@@ -194,22 +192,24 @@
           Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </div>
       </section>
-      <section class="news">
-        <p>Новое в нашем блоге</p>
-        <a class="news-header" href="#">10  способов сервировки<br>
-        фруктовых щербетов к<br>
-        столу</a>
-      </section>
-      <section class="mailing">
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="email" value="" placeholder="Электронная почта">
-          <button class="main-btn" type="submit">Отправить</button>
-        </form>
-      </section>
-      <section class="map">
+      <div class="news&mailing">
+        <section class="news">
+          <p>Новое в нашем блоге</p>
+          <a class="news-header" href="#">10  способов сервировки<br>
+          фруктовых щербетов к<br>
+          столу</a>
+        </section>
+        <section class="mailing">
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="email" value="" placeholder="Электронная почта">
+            <button class="main-btn" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+      <section class="map clearfix">
         <div class="map-text">
           <p>
             Адрес главного офиса<br> и офлайн магазина:<br>
@@ -240,35 +240,33 @@
         </div>
       </section>
     </main>
-    <footer class="footer clearfix">
-      <div class="container">
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        </section>
-        <nav class="footer-navigation">
-          <ul>
-            <li class="heart">
-              <a href="#">Для поставщиков</a>
-            </li>
-            <li>
-              <a href="#">Наши документы</a>
-            </li>
-            <li>
-              <a href="#">О производстве</a>
-            </li>
-            <li>
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
-        </section>
-      </div>
+    <footer class="footer container clearfix">
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      </section>
+      <nav class="footer-navigation">
+        <ul>
+          <li class="heart">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
+      </section>
     </footer>
   </body>
 </html>
