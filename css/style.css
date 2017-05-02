@@ -125,20 +125,21 @@ h3 {
 
 .slider {
   margin: 0 auto;
-  margin-bottom: 62px;
-}
-
-.slider-item {
-  text-align: center;
+  margin-bottom: 39px;
+  
 }
 
 .slider img {
-  margin-top: -118px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  margin: 0 51px;
 }
 
 .slider-header {
-  margin-top: -490px;
+  margin-top: 280px;
   margin-bottom: 25px;
+  text-align: center;
   font-size: 60px;
   line-height: 60px;
   color: #ffffff;
@@ -148,11 +149,15 @@ h3 {
 .slider-btn {
   display: block;
   height: 65px;
+  text-align: center;
 }
 
 .slider-dots {
+  position: absolute;
   margin: 0;
   margin-top: -45px;
+  padding: 0;
+  
 }
 
 .slider-dots li {
@@ -161,7 +166,7 @@ h3 {
 }
 
 .banners {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 }
 
 .banner-item {
@@ -176,18 +181,11 @@ h3 {
 }
 
 .hits {
-  margin-bottom: 40px;
+  margin-bottom: 8px;
 }
 
-.hit-item {
-  float: left;
-  width: 267px;
-  min-height: 324px;
-  margin-right: 26px;
-}
+.catalog-item-hit {
 
-.hit-item:last-child {
-  margin-right: 0;
 }
 
 .seo {
@@ -293,11 +291,8 @@ h3 {
   float: left;
 }
 
-.catalog-index {
-  
-}
-
 .catalog-item {
+  position: relative;
   float: left;
   width: 267px;
   min-height: 329px;
@@ -310,8 +305,25 @@ h3 {
   margin-right: 0;
 }
 
-.catalog-price, .hits-price {
-  margin-top: -60px;
+.catalog-item img {
+  display: block;
+}
+.catalog-price {
+  position: absolute;
+  top: 216px;
+}
+
+.catalog-description {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.catalog-item .main-btn {
+  position: absolute;
+  width: 203px;
+  margin-top: 10px;
+  margin-left: 32px;
+  text-align: center;
 }
 
 .catalog-navigation {
