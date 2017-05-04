@@ -227,9 +227,9 @@ h3 {
 
 .map-text {
   float: right;
-  width: 254px;
-  min-height: 256px;
-  margin: 63px 27px;
+  width: 256px;
+  min-height: 257px;
+  margin: 63px 0;
   padding: 23px;
 }
 
