@@ -2,21 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body class="catalog-body">
     <header class="main-header container clearfix">
       <div class="logo">
         <a href="index.html"><img src="img/logo-gllacy.png" width="154" height="64" alt="GllacyShop"></a>
       </div>
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-menu">
           <li>
             <a class="main-navigation-active" href="#">Каталог</a>
             <ul class="main-navigation-submenu">
               <li>
-                <a href="#">Новинки</a>
+                <a href="#"><span>Новинки</span></a>
               </li>
               <li>
                 <a class="main-navigation-submenu-active">Сливочное</a>
@@ -33,10 +35,10 @@
             </ul>
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a href="#"><span>Доставка и оплата</span></a>
           </li>
           <li>
-            <a href="#">О Компании</a>
+            <a href="#"><span>О Компании</span></a>
           </li>
         </ul>
       </nav>
@@ -66,7 +68,7 @@
         </div>
       </div>
       <div class="cart-block">
-        <a class="cart" href="#">Пусто</a>
+        <a class="cart cart-full" href="#">2 товара</a>
         <div class="cart-window">
           <table class="cart-list">
             <tr>
@@ -93,8 +95,8 @@
         </div>
       </div>
       <div class="contacts">
-        с 10 до 20, ежедневно<br>
-        <span class="phone">8 812 450-25-25</span>
+        С 10 до 20, ежедневно
+        <p class="phone">8 812 450-25-25</p>
       </div>
     </header>
     
@@ -110,11 +112,11 @@
           <li>Сливочное</li>
         </ul>
       </nav>
-      <h1>Сливочное мороженое</h1>
+      <h1 class="catalog-header">Сливочное мороженое</h1>
       <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
         <label class="filter-form-item">
-          Сортировка:<br>
-          <select name="sorting">
+          <span class="filter-name">Сортировка:</span><br>
+          <select name="sorting filter-control">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
@@ -122,33 +124,41 @@
           </select>
         </label>
         
-        <label class="filter-form-item">
-          Цена:<br>
-          <span id="price-start">100 руб.</span> - <span id="price-end">500 руб.</span>
-        </label>
-        <div class="price-slider">
-          <div class="price-low">
-          </div>
-          <div class="price-high">
+        <div class="filter-form-item">
+          <label>
+            <span class="filter-name">Цена:</span>
+            <span id="price-start">100 руб.</span> – <span id="price-end">500 руб.</span>
+          </label>
+          <div class="price-slider filter-control">
+            <div class="stripe">
+            </div>
+            <div class="price-low">
+            </div>
+            <div class="price-high">
+            </div>
           </div>
         </div>
         
         
         <fieldset class="filter-form-item">
-          <legend>Жирность:</legend>
-          <input id="fat0" type="radio" name="fat" value="0"> <label for="fat0">0%</label>
-          <input id="fat-less10" type="radio" name="fat" value="less10"> <label for="fat-less10">до 10%</label>
-          <input id="fat-less30" type="radio" name="fat" value="less30"> <label for="fat-less30">до 30%</label>
-          <input id="fat-more30" type="radio" name="fat" value="more30"> <label for="fat-more30">выше 30%</label>
+          <legend class="filter-name">Жирность:</legend>
+          <div class="filter-control">
+            <input id="fat0" type="radio" name="fat" value="0"> <label for="fat0">0%</label>
+            <input id="fat-less10" type="radio" name="fat" value="less10"> <label for="fat-less10">до 10%</label>
+            <input id="fat-less30" type="radio" name="fat" value="less30"> <label for="fat-less30">до 30%</label>
+            <input id="fat-more30" type="radio" name="fat" value="more30"> <label for="fat-more30">выше 30%</label>
+          </div>
         </fieldset>
         
         <fieldset class="filter-form-item">
-          <legend>Наполнители:</legend>
-          <input id="choko" type="checkbox" name="filing" value="choko"> <label for="choko">шоколадные</label>
-          <input id="sugar" type="checkbox" name="filing" value="sugar"> <label for="sugar">сахарные присыпки</label>
-          <input id="fruit" type="checkbox" name="filing" value="fruit"> <label for="fruit">фрукты</label>
-          <input id="syrops" type="checkbox" name="filing" value="syrops"> <label for="syrops">сиропы</label>
-          <input id="jams" type="checkbox" name="filing" value="jams"> <label for="jams">джемы</label>
+          <legend class="filter-name">Наполнители:</legend>
+          <div class="filter-control">
+            <input id="choko" type="checkbox" name="filing" value="choko"> <label for="choko">шоколадные</label>
+            <input id="sugar" type="checkbox" name="filing" value="sugar"> <label for="sugar">сахарные присыпки</label>
+            <input id="fruit" type="checkbox" name="filing" value="fruit"> <label for="fruit">фрукты</label>
+            <input id="syrops" type="checkbox" name="filing" value="syrops"> <label for="syrops">сиропы</label>
+            <input id="jams" type="checkbox" name="filing" value="jams"> <label for="jams">джемы</label>
+          </div>
         </fieldset>
         
         <button class="filter-btn" type="submit">Применить</button>
@@ -314,6 +324,15 @@
               <a href="#">2</a>
             </li>
             <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
               <a href="#">следующая</a>
             </li>
           </ul>
@@ -329,12 +348,14 @@
       </section>
       <nav class="footer-navigation">
         <ul>
-          <li class="heart">
+          <li class="footer-navigation-heart">
             <a href="#">Для поставщиков</a>
           </li>
           <li>
             <a href="#">О производстве</a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="#">Наши документы</a>
           </li>
@@ -345,7 +366,7 @@
       </nav>
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
+        <p>Сделано в <a class="footer-copyright-name" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
       </section>
     </footer>
   </body>

@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
@@ -13,7 +15,7 @@
         <nav class="main-navigation">
           <ul class="main-navigation-menu">
             <li>
-              <a href="#">Каталог</a>
+              <a href="#"><span>Каталог</span></a>
               <ul class="main-navigation-submenu">
                 <li>
                   <a href="#">Новинки</a>
@@ -33,10 +35,10 @@
               </ul>
             </li>
             <li>
-              <a href="#">Доставка и оплата</a>
+              <a href="#"><span>Доставка и оплата</span></a>
             </li>
             <li>
-              <a href="#">О Компании</a>
+              <a href="#"><span>О Компании</span></a>
             </li>
           </ul>
         </nav>
@@ -83,8 +85,8 @@
           </div>
         </div>
         <div class="contacts">
-          с 10 до 20, ежедневно<br>
-          <span class="phone">8 812 450-25-25</span>
+          С 10 до 20, ежедневно<br>
+          <p class="phone">8 812 450-25-25</p>
         </div>
     </header>
     
@@ -95,33 +97,33 @@
           <div class="slider-item">
             <img src="img/slider1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
             <h2 class="slider-header">Крем-брюле и пломбир<br> с малиновым джемом</h2>
-            <a class="slider-btn" href="#">Давайте оба!</a>
+            <a class="slider-btn main-btn" href="#">Давайте оба!</a>
           </div>
           <div class="slider-item" style="display: none;">
             <img src="img/slider2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
             <h2 class="slider-header">Шоколадный пломбир и лимонный сорбет </h2>
-            <a class="slider-btn" href="#">Давайте оба!</a>
+            <a class="slider-btn main-btn" href="#">Давайте оба!</a>
           </div>
           <div class="slider-item" style="display: none;">
             <img src="img/slider3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
             <h2 class="slider-header">Пломбир с помадкой и клубничный щербет</h2>
-            <a class="slider-btn" href="#">Давайте оба!</a>
+            <a class="slider-btn main-btn" href="#">Давайте оба!</a>
           </div>
           <ul class="slider-dots">
-            <li class="active">1</li>
+            <li class="slider-dots-active">1</li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
           </ul>
           
         </section>
         <section class="banners clearfix">
-          <div class="banner-item">
-            <h2>Малинка даром!</h2>
+          <div class="banner-item banner-raspberry">
+            <h2 class="banner-header">Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="main-btn" href="#">Хочу варенье!</a>
           </div>
-          <div class="banner-item">
-            <h2>Шоколадки даром!</h2>
+          <div class="banner-item banner-chokolate">
+            <h2 class="banner-header">Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="main-btn" href="#">Хочу шоколадки!</a>
           </div>
@@ -134,7 +136,9 @@
                 310&#8381;<span class="catalog-kg">/кг</span>
               </div>
               <div class="catalog-description">
-                Сливочное с апельсиновым джемом и цитрусовой стружкой
+                <span>
+                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </span>
               </div>
             </a>
             <a class="main-btn" href="#">Быстрый просмотр</a>
@@ -146,7 +150,9 @@
                 380&#8381;<span class="catalog-kg">/кг</span>
               </div>
               <div class="catalog-description">
-                Сливочно-кофейное с кусочками шоколада
+                <span>
+                  Сливочно-кофейное с кусочками шоколада
+                </span>
               </div>
             </a>
             <a class="main-btn" href="#">Быстрый просмотр</a>
@@ -158,7 +164,9 @@
                 355&#8381;<span class="catalog-kg">/кг</span>
               </div>
               <div class="catalog-description">
-                Сливочно-клубничное с присыпкой из белого шоколада
+                <span>
+                  Сливочно-клубничное с присыпкой из белого шоколада
+                </span>
               </div>
             </a>
             <a class="main-btn" href="#">Быстрый просмотр</a>
@@ -170,7 +178,9 @@
                 415&#8381;<span class="catalog-kg">/кг</span>
               </div>
               <div class="catalog-description">
-                Сливочное крем-брюле с карамельной подливкой
+                <span>
+                  Сливочное крем-брюле с карамельной подливкой
+                </span>
               </div>
             </a>
             <a class="main-btn" href="#">Быстрый просмотр</a>
@@ -180,16 +190,16 @@
           <h3>
             Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
           </h3>
-          <div class="seo-item">
+          <div class="seo-item seo-ice-cream">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </div>
-          <div class="seo-item">
+          <div class="seo-item seo-cow">
             Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </div>
-          <div class="seo-item">
+          <div class="seo-item seo-leaf">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. 
           </div>
-          <div class="seo-item">
+          <div class="seo-item seo-thermo">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </div>
         </section>
@@ -220,7 +230,7 @@
             </p>
             <p>
               Для заказов по телефону:<br>
-              <b class="map-bold">8 812 450-25-25</b><br>
+              <b class="map-phone">8 812 450-25-25</b><br>
               (с 10 до 20 ежедневно)
             </p>
             <a class="main-btn" href="#">Форма обратной связи</a>
@@ -253,14 +263,16 @@
       </section>
       <nav class="footer-navigation">
         <ul>
-          <li class="heart">
+          <li class="footer-navigation-heart">
             <a href="#">Для поставщиков</a>
           </li>
           <li>
-            <a href="#">Наши документы</a>
-          </li>
-          <li>
             <a href="#">О производстве</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Наши документы</a>
           </li>
           <li>
             <a href="#">Экологические стандарты</a>
@@ -269,7 +281,7 @@
       </nav>
       <section class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="108" height="38" alt="HTML Academy"></a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
+        <p>Сделано в <a class="footer-copyright-name" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p>
       </section>
     </footer>
   </body>
