@@ -18,7 +18,7 @@
             <a class="main-navigation-active" href="#">Каталог</a>
             <ul class="main-navigation-submenu">
               <li>
-                <a href="#"><span>Новинки</span></a>
+                <a href="#">Новинки</a>
               </li>
               <li>
                 <a class="main-navigation-submenu-active">Сливочное</a>
@@ -62,36 +62,58 @@
               <input type="text" name="password" value="" placeholder="Пароль">
             </p>
             <button class="main-btn" type="submit">Войти</button>
+            <div class="login-links">
+              <a href="#">Забыли пароль?</a><br>
+              <a href="#">Новая регистрация</a>
+            </div>
           </form>
-          <a href="#">Забыли пароль?</a><br>
-          <a href="#">Новая регистрация</a>
         </div>
       </div>
       <div class="cart-block">
         <a class="cart cart-full" href="#">2 товара</a>
         <div class="cart-window">
-          <table class="cart-list">
-            <tr>
-              <td>
-                <a class="remove" href="#">Убрать</a>
-              </td>
-              <td>
-                <img src="img/cart-preview.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-              </td>
-              <td>
-                <span class="cart-description">Пломбир с апельсиновым джемом</span>
-              </td>
-              <td>
-                <span class="cart-amount">1,5 кг x</span>
-                <span class="cart-price">200 руб.</span>
-              </td>
-              <td>
-                <span class="cart-cost">300 руб.</span>
-              </td>
-            </tr>
-          </table>
-          <p>Итого: 750 руб.</p>
-          <a class="main-btn" href="#">Оформить заказ</a>
+          <div class="cart-wrapper">
+            <table class="cart-list">
+              <tr>
+                <td>
+                  <a class="remove" href="#">Убрать</a>
+                </td>
+                <td>
+                  <img src="img/cart-preview.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </td>
+                <td class="cart-description">
+                  Пломбир с апельсиновым джемом
+                </td>
+                <td>
+                  1,5 кг x
+                  <span class="cart-price">200 руб.</span>
+                </td>
+                <td class="cart-cost">
+                  300 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="remove" href="#">Убрать</a>
+                </td>
+                <td>
+                  <img src="img/cart-preview2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </td>
+                <td class="cart-description">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td>
+                  1,5 кг x
+                  <span class="cart-price">300 руб.</span>
+                </td>
+                <td class="cart-cost">
+                  450 руб.
+                </td>
+              </tr>
+            </table>
+            <p>Итого: 750 руб.</p>
+            <a class="main-btn" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <div class="contacts">
