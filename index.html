@@ -46,7 +46,8 @@
           <a class="search" href="#">Поиск</a>
           <div class="search-window">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" name="search" value="" placeholder="Что ищем?">
+              <input id="search" type="text" name="search" value="" placeholder="Что ищем?">
+              <label for="search"></label>
               <button class="search-btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -56,13 +57,15 @@
           <div class="login-window">
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
-                <input type="text" name="email" value="" placeholder="Электронная почта">
+                <input id="login-email" type="text" name="email" value="" placeholder="Электронная почта">
+                <label class="login-email" for="login-email"></label>
               </p>
               <p>
-                <input type="text" name="password" value="" placeholder="Пароль">
+                <input id="login-password" type="text" name="password" value="" placeholder="Пароль">
+                <label class="login-password" for="login-password"></label>
               </p>
               <button class="main-btn" type="submit">Войти</button>
-              <div class="login-links">
+              <div class="login-links clearfix">
                 <a href="#">Забыли пароль?</a><br>
                 <a href="#">Новая регистрация</a>
               </div>
@@ -203,7 +206,8 @@
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" name="email" value="" placeholder="Электронная почта">
+              <input id="mailing-email" type="text" name="email" value="" placeholder="Электронная почта">
+              <label for="mailing-email"></label>
               <button class="main-btn" type="submit">Отправить</button>
             </form>
           </section>
@@ -225,21 +229,26 @@
               (с 10 до 20 ежедневно)
             </p>
             <a class="main-btn" href="#">Форма обратной связи</a>
-            <div class="modal">
-              <h3>Мы обязательно вам ответим!</h3>
-              <button class="remove">Закрыть</button>
-              <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <input type="text" name="name" value="" placeholder="Как вас зовут?">
-                </p>
-                <p>
-                  <input type="text" name="email" value="" placeholder="Ваша почта для ответа?">
-                </p>
-                <p>
-                  <textarea name="message" placeholder="Напишите что-нибудь..."></textarea>
-                </p>
-                <button class="main-btn" type="submit">Отправить</button>
-              </form>
+            <div class="fixed-overlay">
+              <div class="modal">
+                <h3>Мы обязательно вам ответим!</h3>
+                <button class="remove">Закрыть</button>
+                <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <input id="modal-name" type="text" name="name" value="" placeholder="Как вас зовут?">
+                    <label for="modal-name" class="modal-name"></label>
+                  </p>
+                  <p>
+                    <input id="modal-email" type="text" name="email" value="" placeholder="Ваша почта для ответа?">
+                    <label for="modal-email" class="modal-email"></label>
+                  </p>
+                  <p>
+                    <textarea id="modal-message" name="message" placeholder="Напишите что-нибудь..."></textarea>
+                    <label for="modal-message" class="modal-message"></label>
+                  </p>
+                  <button class="main-btn" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
