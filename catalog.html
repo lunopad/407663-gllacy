@@ -46,7 +46,8 @@
         <a class="search" href="#">Поиск</a>
         <div class="search-window">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input type="text" name="search" value="" placeholder="Что ищем?">
+            <input id="search" type="text" name="search" value="" placeholder="Что ищем?">
+            <label for="search"></label>
             <button class="search-btn" type="submit">Отправить</button>
           </form>
         </div>
@@ -54,20 +55,26 @@
       <div class="login-block">
         <a class="login" href="#">Вход</a>
         <div class="login-window">
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <input type="text" name="email" value="" placeholder="Электронная почта">
-            </p>
-            <p>
-              <input type="text" name="password" value="" placeholder="Пароль">
-            </p>
-            <button class="main-btn" type="submit">Войти</button>
-            <div class="login-links clearfix">
-              <a href="#">Забыли пароль?</a><br>
-              <a href="#">Новая регистрация</a>
-            </div>
-          </form>
-        </div>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <input id="login-email" type="text" name="email" value="" placeholder="Электронная почта">
+                <label class="login-email" for="login-email"></label>
+              </p>
+              <p>
+                <input id="login-password" type="text" name="password" value="" placeholder="Пароль">
+                <label class="login-password" for="login-password"></label>
+              </p>
+              <button class="main-btn" type="submit">Войти</button>
+              <div class="login-links clearfix">
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                </p>
+                <p>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
+          </div>
       </div>
       <div class="cart-block">
         <a class="cart cart-full" href="#">2 товара</a>
@@ -137,7 +144,7 @@
       <h1 class="catalog-header">Сливочное мороженое</h1>
       <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="get">
         <label class="filter-form-item">
-          <span class="filter-name">Сортировка:</span><br>
+          <span class="filter-name">Сортировка:</span>
           <select name="sorting filter-control">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
