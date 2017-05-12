@@ -18,20 +18,6 @@ body > input[type="radio"] {
   background: #849d8f url("../img/catalog-background.jpg") repeat-x top;
 }
 
-h1, h2 {
-  font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
-  font-weight: bold;
-}
-
 .site-wrapper {
   min-width: 1200px;
   background-color: #849d8f;
@@ -240,6 +226,11 @@ a.main-navigation-submenu-active {
   font-weight: normal;
 }
 
+.search-form input:-ms-input-placeholder {
+  font-weight: normal;
+  color: #b2b2b2;
+}
+
 .search-form input:hover {
   margin: 19px 16px;
   height: 46px;
@@ -375,6 +366,11 @@ a.main-navigation-submenu-active {
 
 .login-form input::placeholder {
   font-weight: normal;
+}
+
+.login-form input:-ms-input-placeholder {
+  font-weight: normal;
+  color: #b2b2b2;
 }
 
 .login-form label.login-email::after {
@@ -638,6 +634,10 @@ td.cart-cost {
 .catalog-header {
   margin: 0;
   margin-top: 2px;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .slider {
@@ -792,6 +792,10 @@ td.cart-cost {
 
 .banner-header {
   margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .banner-item p {
@@ -839,6 +843,10 @@ td.cart-cost {
 
 .seo h3 {
   margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: bold;
 }
 
 .seo-item {
@@ -983,6 +991,11 @@ td.cart-cost {
   font-weight: normal;
 }
 
+.mailing-form input:-ms-input-placeholder {
+  font-weight: normal;
+  color: #b2b2b2;
+}
+
 .mailing-form input:focus::placeholder {
   color: transparent;
 }
@@ -1088,6 +1101,7 @@ td.cart-cost {
   font-size: 24px;
   line-height: 28px;
   font-weight: normal;
+  color: #323232;
 }
 
 .modal p {
@@ -1184,6 +1198,12 @@ td.cart-cost {
   font-weight: normal;
 }
 
+.modal input:-ms-input-placeholder,
+.modal textarea:-ms-input-placeholder {
+  font-weight: normal;
+  color: #b2b2b2;
+}
+
 .modal input:focus::placeholder {
   color: transparent;
 }
@@ -1215,7 +1235,7 @@ td.cart-cost {
   float: left;
   width: 400px;
   margin-top: 16px;
-  margin-right: 20px;
+  margin-right: 21px;
   font-size: 0;
 }
 
@@ -1284,7 +1304,7 @@ td.cart-cost {
 
 .footer-navigation {
   float: left;
-  margin-top: 13px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   font-size: 0;
