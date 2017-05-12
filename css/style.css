@@ -1280,7 +1280,6 @@ td.cart-cost {
 }
 
 .social-btn:active::after {
-  #background-color: rgb(233,233,233);
   box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 1);
 }
 
