@@ -1365,9 +1365,12 @@ li.slider-dots-active:hover {
   display: none;
 }
 
+.filter-form select:hover {
+  background-image: url('../img/select-arrow-hover.png');
+}
+
 .filter-form select:hover,
 .filter-btn:hover {
-  background-image: url('../img/select-arrow-hover.png');
   background-color: #ffffff;
   color: #323232;
 }
