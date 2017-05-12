@@ -1429,6 +1429,7 @@ td.cart-cost {
   text-overflow: '';
 
   -ms-appearance: none;
+  appearance: none;
   
 }
  
